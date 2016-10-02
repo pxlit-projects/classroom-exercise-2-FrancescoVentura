@@ -1,5 +1,8 @@
 package be.pxl.spring.rest.fallout;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Quote {
     private String author;
     private String quote;
@@ -11,7 +14,7 @@ public class Quote {
 
     Quote(){}
 
-    private Quote(String author, String quote) {
+    public Quote(String author, String quote) {
         this.author = author;
         this.quote = quote;
     }
